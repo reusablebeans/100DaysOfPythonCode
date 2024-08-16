@@ -1,3 +1,5 @@
+# THIS DOES NOT RUN IN PYTHON. THIS IS SIMPLY MY ASSIGNMENT IN REEBORG'S WORLD
+
 def turn_right():
     turn_left()
     turn_left()
