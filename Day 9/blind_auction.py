@@ -13,10 +13,11 @@ while more_bidders:
     repeat_decision = True
     while repeat_decision:
         continue_auction = input("Is there anyone else in this auction that would like to place a bid? \"yes\"/\"no\" ")
-        if continue_auction == "yes":
+        if continue_auction.lower() == "yes":
             more_bidders = True
             repeat_decision = False
-        elif continue_auction == "no":
+            print("\n" * 50)
+        elif continue_auction.lower() == "no":
             more_bidders = False
             repeat_decision = False
             winning_bid = 0
@@ -30,7 +31,7 @@ while more_bidders:
                 elif bidding_entries[bidder] == winning_bid:
                     winner += " & " + bidder
             print(f"-------------------- AUCTION RESULTS -------------------- \n"
-                  f"WINNING BIDDER(S): {winner}"
+                  f"WINNING BIDDER(S): {winner.upper()} \n"
                   f"WINNING BID: ${winning_bid} \n")
         else:
             repeat_decision = True
