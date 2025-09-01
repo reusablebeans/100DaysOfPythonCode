@@ -1,0 +1,7 @@
+# this line of code take user input, counts the length of the string and outputs it in a single line of code
+print(len(input("Type an input: ")))
+
+# these lines take the function of the previous line and split it into 3 lines through variables
+username = input("What is your username? ")
+length = len(username)
+print(length)
